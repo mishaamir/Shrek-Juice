@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Outline&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Outline&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ramabhadra&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#container {
+  background-color: #FFF8F0;
+  height: 1360px;
+}
+
+.menu-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.logo-link {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+}
+
+.logo-link img {
+  width: 160px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.logo-link img:hover {
+  transform: scale(1.08);
+}
+
+.heading {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 50px;
+  font-family: Bungee Outline;
+  color: #ff5a00;
+  font-weight: 600;
+}
+
+.img1 {
+  position: absolute;
+  top: -44px;
+  left: -100px;
+  width: 300px;
+}
+
+.img1 img {
+  width: 100%;
+  transform: rotate(13deg);
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.25));
+}
+
+.img2 {
+  position: absolute;
+  top: 0px;
+  right: 148px;
+  width: 500px;
+}
+
+.img2 img {
+  width: 130%;
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.25));
+}
+
+.img3 {
+  position: absolute;
+  top: 870px;
+  right: 765px;
+  width: 500px;
+}
+
+.img3 img {
+  width: 130%;
+  margin-left: -80px;
+  margin-top: 13px;
+}
+
+.img4 {
+  position: absolute;
+  top: 1000px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.img4 img {
+  width: 40%;
+  filter: drop-shadow(0 8px 10px #00000040);
+  margin-left: 65.2%;
+  margin-bottom: -15px;
+}
+
+/* text content */
+.menu {
+  margin-top: 60px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-bottom: 60px;
+}
+
+.menu-box {
+  width: 280px;
+}
+
+.menu-box h2 {
+  font-size: 30px;
+  color: #308505;
+  margin-bottom: 15px;
+  font-family: Inter;
+  text-align: center;
+}
+
+.menu-box ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-box li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed;
+  font-size: 16px;
+  font-family: Outfit;
+}
+
+.menu-divider {
+  width: 80%;
+  margin: 50px auto;
+  border: none;
+  border-top: 2px solid #ddd;
+}
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .menu-container {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    display: none;
+  }
+
+  .heading {
+    font-size: 42px;
+  }
+
+  .logo-link img {
+    width: 130px;
+    margin-left: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .menu-header {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .logo-link {
+    position: static;
+  }
+
+  .logo-link img {
+    width: 110px;
+    margin: 0;
+  }
+
+  .heading {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .menu-box {
+    width: 90%;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .menu-box {
+    width: 95%;
+  }
+
+  .menu-box h2 {
+    font-size: 22px;
+  }
+
+  .menu-box li {
+    font-size: 14px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 375px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .menu-box h2 {
+    font-size: 18px;
+  }
+
+  .menu-box li {
+    font-size: 13px;
+  }
+
+  .logo-link img {
+    width: 90px;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  
+  <a href="index.html" class="top-logo">
+    <img src="Images/logo.png" alt="Shrek Juice Logo">
+</a>
+
+    
+  <!-- Franchise Section -->
+<section id="franchise-apply" data-aos="flip-right">
+    <div class="form">
+  <h2>Apply for Franchise</h2>
+  <p class="form-intro">
+    Become a part of Shrek Juice family.  
+    Fill the form below and our team will contact you soon.
+  </p>
+
+  <form class="franchise-form">
+
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter your phone number" required>
+    </div>
+
+    <div class="form-group">
+      <label>City</label>
+      <input type="text" placeholder="Enter your city" required>
+    </div>
+
+    <div class="form-group">
+      <label>Investment Budget</label>
+      <select required>
+        <option value="">Select budget range</option>
+        <option>5 – 10 Lac</option>
+        <option>10 – 20 Lac</option>
+        <option>20 – 30 Lac</option>
+        <option>Above 30 Lac</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Do you have prior business experience?</label>
+      <select required>
+        <option value="">Select option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Message (Optional)</label>
+      <textarea rows="4" placeholder="Tell us why you want to join Shrek Juice"></textarea>
+    </div>
+
+    <button type="submit" class="apply-btn">Apply Now</button>
+    </div>
+  </form>
+
+</section>
+
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
